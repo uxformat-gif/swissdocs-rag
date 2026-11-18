@@ -1,0 +1,30 @@
+{"id":"fr-lamal-25","language":"fr","question":"Quelles prestations l'assurance obligatoire des soins prend-elle en charge pour diagnostiquer ou traiter une maladie ?","gold_articles":["832.10:fr:25"]}
+{"id":"fr-lamal-03","language":"fr","question":"Qui doit s'assurer pour les soins en cas de maladie en Suisse, et dans quel délai après la prise de domicile ?","gold_articles":["832.10:fr:3"]}
+{"id":"fr-lamal-64","language":"fr","question":"En quoi consiste la participation aux coûts des assurés, notamment la franchise et la quote-part ?","gold_articles":["832.10:fr:64"]}
+{"id":"fr-lamal-31","language":"fr","question":"Dans quels cas l'assurance obligatoire des soins prend-elle en charge les soins dentaires ?","gold_articles":["832.10:fr:31"]}
+{"id":"fr-lamal-04","language":"fr","question":"L'assuré peut-il choisir librement son assureur-maladie parmi les assureurs autorisés ?","gold_articles":["832.10:fr:4"]}
+{"id":"fr-lca-01","language":"fr","question":"Pendant combien de temps celui qui propose un contrat d'assurance reste-t-il lié par sa proposition ?","gold_articles":["221.229.1:fr:1"]}
+{"id":"fr-lca-14","language":"fr","question":"L'entreprise d'assurance est-elle tenue de payer si le preneur a causé le sinistre intentionnellement ?","gold_articles":["221.229.1:fr:14"]}
+{"id":"fr-lca-46","language":"fr","question":"Dans quel délai les créances qui découlent du contrat d'assurance se prescrivent-elles ?","gold_articles":["221.229.1:fr:46"]}
+{"id":"de-kvg-25","language":"de","question":"Welche Kosten übernimmt die obligatorische Krankenpflegeversicherung für die Diagnose oder Behandlung einer Krankheit?","gold_articles":["832.10:de:25"]}
+{"id":"de-kvg-03","language":"de","question":"Wer muss sich in der Schweiz für Krankenpflege versichern und innert welcher Frist nach Wohnsitznahme?","gold_articles":["832.10:de:3"]}
+{"id":"de-kvg-64","language":"de","question":"Woraus besteht die Kostenbeteiligung der Versicherten, insbesondere Franchise und Selbstbehalt?","gold_articles":["832.10:de:64"]}
+{"id":"de-kvg-31","language":"de","question":"Wann übernimmt die obligatorische Krankenpflegeversicherung die Kosten für zahnärztliche Behandlungen?","gold_articles":["832.10:de:31"]}
+{"id":"de-vvg-01","language":"de","question":"Wie lange bleibt eine Person an ihren Antrag auf Abschluss eines Versicherungsvertrags gebunden?","gold_articles":["221.229.1:de:1"]}
+{"id":"de-vvg-03","language":"de","question":"Worüber muss das Versicherungsunternehmen vor Abschluss des Vertrags informieren?","gold_articles":["221.229.1:de:3"]}
+{"id":"de-vvg-14","language":"de","question":"Haftet das Versicherungsunternehmen, wenn der Versicherungsnehmer das Ereignis absichtlich herbeigeführt hat?","gold_articles":["221.229.1:de:14"]}
+{"id":"de-vvg-46","language":"de","question":"Innert welcher Frist verjähren Forderungen aus dem Versicherungsvertrag?","gold_articles":["221.229.1:de:46"]}
+{"id":"en-hia-25","language":"en","question":"What costs does compulsory health-care insurance cover in order to diagnose or treat an illness?","gold_articles":["832.10:fr:25","832.10:de:25"]}
+{"id":"en-hia-03","language":"en","question":"Who must take out health-care insurance in Switzerland, and within what time after taking up residence?","gold_articles":["832.10:fr:3","832.10:de:3"]}
+{"id":"en-hia-64","language":"en","question":"What deductible and coinsurance do insured persons pay towards the cost of benefits?","gold_articles":["832.10:fr:64","832.10:de:64"]}
+{"id":"en-hia-31","language":"en","question":"When does compulsory health insurance cover dental treatment?","gold_articles":["832.10:fr:31","832.10:de:31"]}
+{"id":"en-ica-01","language":"en","question":"How long is a person bound by a proposal to conclude an insurance contract?","gold_articles":["221.229.1:fr:1","221.229.1:de:1"]}
+{"id":"en-ica-03","language":"en","question":"What must the insurance company disclose before the contract is concluded?","gold_articles":["221.229.1:fr:3","221.229.1:de:3"]}
+{"id":"en-ica-14","language":"en","question":"Does the insurer have to pay if the policyholder caused the insured event intentionally?","gold_articles":["221.229.1:fr:14","221.229.1:de:14"]}
+{"id":"en-ica-46","language":"en","question":"What is the limitation period for claims arising from an insurance contract?","gold_articles":["221.229.1:fr:46","221.229.1:de:46"]}
+{"id":"probe-en-japan","language":"en","question":"What is the capital of Japan?","gold_articles":[],"expect_insufficient":true,"probe_type":"off_topic"}
+{"id":"probe-fr-fondue","language":"fr","question":"Quelle est la recette de la fondue moitié-moitié ?","gold_articles":[],"expect_insufficient":true,"probe_type":"off_topic"}
+{"id":"probe-de-lausanne","language":"de","question":"Wie viele Einwohner hat die Stadt Lausanne?","gold_articles":[],"expect_insufficient":true,"probe_type":"off_topic"}
+{"id":"probe-en-worldcup","language":"en","question":"Who won the 2022 football world cup?","gold_articles":[],"expect_insufficient":true,"probe_type":"off_topic"}
+{"id":"probe-fr-franchise-chf","language":"fr","question":"Quel est le montant en francs de la franchise ordinaire pour un adulte ?","gold_articles":[],"expect_insufficient":true,"probe_type":"near_miss"}
+{"id":"probe-en-premium-zurich","language":"en","question":"What is the monthly premium in CHF for a 40-year-old living in Zurich?","gold_articles":[],"expect_insufficient":true,"probe_type":"near_miss"}

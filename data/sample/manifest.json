@@ -1,0 +1,71 @@
+{
+  "generated_on": "2026-11-18",
+  "note": "Official FR/DE texts are federal enactments (not copyright-protected, art. 5 CopA/URG). Fedlex currently has no downloadable English consolidation for these two acts, so English questions are answered from the official French and German texts. Insurer general terms are not included; they are copyrighted. Point CUSTOM_CORPUS_PATH at a private JSONL to add them locally.",
+  "laws": [
+    {
+      "sr": "832.10",
+      "language": "fr",
+      "status": "ok",
+      "version_date": "2026-07-01",
+      "binding": true,
+      "xml_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701/fr/xml/fedlex-data-admin-ch-eli-cc-1995-1328_1328_1328-20260701-fr-xml-1.xml",
+      "pdf_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701/fr/pdf-a/fedlex-data-admin-ch-eli-cc-1995-1328_1328_1328-20260701-fr-pdf-a.pdf",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/fr",
+      "articles": 132,
+      "chunks": 211,
+      "pages_mapped": 131
+    },
+    {
+      "sr": "832.10",
+      "language": "de",
+      "status": "ok",
+      "version_date": "2026-07-01",
+      "binding": true,
+      "xml_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701/de/xml/fedlex-data-admin-ch-eli-cc-1995-1328_1328_1328-20260701-de-xml-1.xml",
+      "pdf_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701/de/pdf-a/fedlex-data-admin-ch-eli-cc-1995-1328_1328_1328-20260701-de-pdf-a.pdf",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
+      "articles": 132,
+      "chunks": 208,
+      "pages_mapped": 130
+    },
+    {
+      "sr": "832.10",
+      "language": "en",
+      "status": "missing",
+      "error": "No applicable Fedlex consolidation"
+    },
+    {
+      "sr": "221.229.1",
+      "language": "fr",
+      "status": "ok",
+      "version_date": "2024-01-01",
+      "binding": true,
+      "xml_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/719_735_717/20240101/fr/xml/fedlex-data-admin-ch-eli-cc-24-719_735_717-20240101-fr-xml-14.xml",
+      "pdf_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/719_735_717/20240101/fr/pdf-a/fedlex-data-admin-ch-eli-cc-24-719_735_717-20240101-fr-pdf-a-2.pdf",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/fr",
+      "articles": 98,
+      "chunks": 103,
+      "pages_mapped": 96
+    },
+    {
+      "sr": "221.229.1",
+      "language": "de",
+      "status": "ok",
+      "version_date": "2024-01-01",
+      "binding": true,
+      "xml_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/719_735_717/20240101/de/xml/fedlex-data-admin-ch-eli-cc-24-719_735_717-20240101-de-xml-14.xml",
+      "pdf_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/24/719_735_717/20240101/de/pdf-a/fedlex-data-admin-ch-eli-cc-24-719_735_717-20240101-de-pdf-a.pdf",
+      "source_url": "https://www.fedlex.admin.ch/eli/cc/24/719_735_717/de",
+      "articles": 98,
+      "chunks": 105,
+      "pages_mapped": 89
+    },
+    {
+      "sr": "221.229.1",
+      "language": "en",
+      "status": "missing",
+      "error": "No applicable Fedlex consolidation"
+    }
+  ],
+  "chunks": 627
+}

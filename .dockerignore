@@ -1,0 +1,10 @@
+.venv
+.git
+data/raw
+data/qdrant
+data/eval/results.json
+**/__pycache__
+.pytest_cache
+.ruff_cache
+*.egg-info
+.env
