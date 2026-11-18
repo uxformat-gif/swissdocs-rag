@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="publicLaw">
+    <meta>
+      <identification source="#ch.bk">
+        <FRBRWork>
+          <FRBRthis value="https://fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701/main-text"/>
+          <FRBRuri value="https://fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328/20260701"/>
+          <FRBRdate date="2026-07-01" name="jolux:dateApplicability"/>
+          <FRBRnumber value="832.10"/>
+          <FRBRname xml:lang="fr" value="Loi fédérale du 18 mars 1994 sur l'assurance-maladie (LAMal)" shortForm="LAMal"/>
+        </FRBRWork>
+      </identification>
+    </meta>
+    <body>
+      <chapter eId="chap_1">
+        <num>Chapitre 1</num>
+        <heading>Dispositions générales</heading>
+        <article eId="art_1_a">
+          <num><b>Art. 1</b><i>a</i></num>
+          <heading>Champ d’application</heading>
+          <paragraph eId="art_1_a/para_1">
+            <num>1</num>
+            <content>
+              <p>La présente loi régit l’assurance-maladie sociale, y compris l’assurance obligatoire des soins.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_64">
+          <num><b>Art. 64</b></num>
+          <heading>Participation aux coûts</heading>
+          <paragraph eId="art_64/para_1">
+            <num>1</num>
+            <content>
+              <p>Les assurés participent aux coûts des prestations dont ils bénéficient.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_64/para_2">
+            <num>2</num>
+            <content>
+              <p>Leur participation comprend la franchise et la quote-part.<authorialNote>
+                <p>Nouvelle teneur selon la loi du 18 mars 2022, à ignorer.</p>
+              </authorialNote></p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_2">
+          <num><b>Art. 2</b></num>
+          <paragraph eId="art_2/para">
+            <content><p>Abrogé par l'annexe de la LPGA, avec effet au 1er janvier 2003.</p></content>
+          </paragraph>
+        </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

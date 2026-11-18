@@ -1,0 +1,924 @@
+{
+  "embedding_model": "intfloat/multilingual-e5-large",
+  "llm_backend": "extractive",
+  "corpus_chunks": 627,
+  "gold_answerable": 24,
+  "min_dense_score": 0.78,
+  "gold_insufficient_probes": 6,
+  "retrieval": {
+    "dense": {
+      "de": {
+        "n": 8,
+        "hit_rate_at_1": 0.75,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.8438
+      },
+      "en": {
+        "n": 8,
+        "hit_rate_at_1": 0.625,
+        "hit_rate_at_5": 0.75,
+        "mrr": 0.6667
+      },
+      "fr": {
+        "n": 8,
+        "hit_rate_at_1": 0.75,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.8438
+      },
+      "all": {
+        "n": 24,
+        "hit_rate_at_1": 0.7083,
+        "hit_rate_at_5": 0.9167,
+        "mrr": 0.7847
+      }
+    },
+    "bm25": {
+      "de": {
+        "n": 8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "en": {
+        "n": 8,
+        "hit_rate_at_1": 0.125,
+        "hit_rate_at_5": 0.25,
+        "mrr": 0.1562
+      },
+      "fr": {
+        "n": 8,
+        "hit_rate_at_1": 0.875,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.9375
+      },
+      "all": {
+        "n": 24,
+        "hit_rate_at_1": 0.6667,
+        "hit_rate_at_5": 0.75,
+        "mrr": 0.6979
+      }
+    },
+    "hybrid_rrf": {
+      "de": {
+        "n": 8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "en": {
+        "n": 8,
+        "hit_rate_at_1": 0.75,
+        "hit_rate_at_5": 0.75,
+        "mrr": 0.75
+      },
+      "fr": {
+        "n": 8,
+        "hit_rate_at_1": 0.875,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.9375
+      },
+      "all": {
+        "n": 24,
+        "hit_rate_at_1": 0.875,
+        "hit_rate_at_5": 0.9167,
+        "mrr": 0.8958
+      }
+    }
+  },
+  "extractive_or_generation": {
+    "in_scope_citation_hit_rate": 0.9167,
+    "in_scope_false_abstention_rate": 0.0,
+    "out_of_scope_abstention_rate": 0.0,
+    "off_topic_abstention_rate": 0.0,
+    "near_miss_abstention_rate": 0.0,
+    "note": "Citation hit rate is the share of answerable questions whose cited articles include a gold article. Abstention uses the dense+BM25 gate in SwissDocs (see min_dense_score). These are not RAGAS scores. Run `python scripts/evaluate.py --generation` with Ollama or an OpenAI-compatible backend for model answers."
+  },
+  "per_question": [
+    {
+      "id": "fr-lamal-25",
+      "language": "fr",
+      "question": "Quelles prestations l'assurance obligatoire des soins prend-elle en charge pour diagnostiquer ou traiter une maladie ?",
+      "gold_articles": [
+        "832.10:fr:25"
+      ],
+      "dense_rank": 4,
+      "bm25_rank": 2,
+      "hybrid_rank": 2,
+      "top_dense_score": 0.8615159700978727,
+      "top_bm25_score": 20.084455775362105,
+      "top_article": "832.10:fr:31"
+    },
+    {
+      "id": "fr-lamal-03",
+      "language": "fr",
+      "question": "Qui doit s'assurer pour les soins en cas de maladie en Suisse, et dans quel délai après la prise de domicile ?",
+      "gold_articles": [
+        "832.10:fr:3"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8742022503413004,
+      "top_bm25_score": 19.954093415344488,
+      "top_article": "832.10:fr:3"
+    },
+    {
+      "id": "fr-lamal-64",
+      "language": "fr",
+      "question": "En quoi consiste la participation aux coûts des assurés, notamment la franchise et la quote-part ?",
+      "gold_articles": [
+        "832.10:fr:64"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8668017873101256,
+      "top_bm25_score": 29.561835520521697,
+      "top_article": "832.10:fr:64"
+    },
+    {
+      "id": "fr-lamal-31",
+      "language": "fr",
+      "question": "Dans quels cas l'assurance obligatoire des soins prend-elle en charge les soins dentaires ?",
+      "gold_articles": [
+        "832.10:fr:31"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8955389384138877,
+      "top_bm25_score": 23.272585777325812,
+      "top_article": "832.10:fr:31"
+    },
+    {
+      "id": "fr-lamal-04",
+      "language": "fr",
+      "question": "L'assuré peut-il choisir librement son assureur-maladie parmi les assureurs autorisés ?",
+      "gold_articles": [
+        "832.10:fr:4"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.897475544727632,
+      "top_bm25_score": 26.778966490144683,
+      "top_article": "832.10:fr:4"
+    },
+    {
+      "id": "fr-lca-01",
+      "language": "fr",
+      "question": "Pendant combien de temps celui qui propose un contrat d'assurance reste-t-il lié par sa proposition ?",
+      "gold_articles": [
+        "221.229.1:fr:1"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8883138521422519,
+      "top_bm25_score": 25.640283037307448,
+      "top_article": "221.229.1:fr:1"
+    },
+    {
+      "id": "fr-lca-14",
+      "language": "fr",
+      "question": "L'entreprise d'assurance est-elle tenue de payer si le preneur a causé le sinistre intentionnellement ?",
+      "gold_articles": [
+        "221.229.1:fr:14"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8805484153844465,
+      "top_bm25_score": 25.251267499707126,
+      "top_article": "221.229.1:fr:14"
+    },
+    {
+      "id": "fr-lca-46",
+      "language": "fr",
+      "question": "Dans quel délai les créances qui découlent du contrat d'assurance se prescrivent-elles ?",
+      "gold_articles": [
+        "221.229.1:fr:46"
+      ],
+      "dense_rank": 2,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8779351585947222,
+      "top_bm25_score": 23.795865719284542,
+      "top_article": "221.229.1:fr:46"
+    },
+    {
+      "id": "de-kvg-25",
+      "language": "de",
+      "question": "Welche Kosten übernimmt die obligatorische Krankenpflegeversicherung für die Diagnose oder Behandlung einer Krankheit?",
+      "gold_articles": [
+        "832.10:de:25"
+      ],
+      "dense_rank": 4,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8952816931355079,
+      "top_bm25_score": 19.32757773917009,
+      "top_article": "832.10:de:25"
+    },
+    {
+      "id": "de-kvg-03",
+      "language": "de",
+      "question": "Wer muss sich in der Schweiz für Krankenpflege versichern und innert welcher Frist nach Wohnsitznahme?",
+      "gold_articles": [
+        "832.10:de:3"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.9055062733423211,
+      "top_bm25_score": 22.406297296777293,
+      "top_article": "832.10:de:3"
+    },
+    {
+      "id": "de-kvg-64",
+      "language": "de",
+      "question": "Woraus besteht die Kostenbeteiligung der Versicherten, insbesondere Franchise und Selbstbehalt?",
+      "gold_articles": [
+        "832.10:de:64"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.890031033273225,
+      "top_bm25_score": 24.967962681430322,
+      "top_article": "832.10:de:64"
+    },
+    {
+      "id": "de-kvg-31",
+      "language": "de",
+      "question": "Wann übernimmt die obligatorische Krankenpflegeversicherung die Kosten für zahnärztliche Behandlungen?",
+      "gold_articles": [
+        "832.10:de:31"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.9238994306887318,
+      "top_bm25_score": 21.92622123658143,
+      "top_article": "832.10:de:31"
+    },
+    {
+      "id": "de-vvg-01",
+      "language": "de",
+      "question": "Wie lange bleibt eine Person an ihren Antrag auf Abschluss eines Versicherungsvertrags gebunden?",
+      "gold_articles": [
+        "221.229.1:de:1"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.9171320852225742,
+      "top_bm25_score": 17.935789723362895,
+      "top_article": "221.229.1:de:1"
+    },
+    {
+      "id": "de-vvg-03",
+      "language": "de",
+      "question": "Worüber muss das Versicherungsunternehmen vor Abschluss des Vertrags informieren?",
+      "gold_articles": [
+        "221.229.1:de:3"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8923332493228283,
+      "top_bm25_score": 12.753508004910792,
+      "top_article": "221.229.1:de:3"
+    },
+    {
+      "id": "de-vvg-14",
+      "language": "de",
+      "question": "Haftet das Versicherungsunternehmen, wenn der Versicherungsnehmer das Ereignis absichtlich herbeigeführt hat?",
+      "gold_articles": [
+        "221.229.1:de:14"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8823548789422876,
+      "top_bm25_score": 28.15506745948189,
+      "top_article": "221.229.1:de:14"
+    },
+    {
+      "id": "de-vvg-46",
+      "language": "de",
+      "question": "Innert welcher Frist verjähren Forderungen aus dem Versicherungsvertrag?",
+      "gold_articles": [
+        "221.229.1:de:46"
+      ],
+      "dense_rank": 2,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8795683337915363,
+      "top_bm25_score": 18.10013461965871,
+      "top_article": "221.229.1:de:46"
+    },
+    {
+      "id": "en-hia-25",
+      "language": "en",
+      "question": "What costs does compulsory health-care insurance cover in order to diagnose or treat an illness?",
+      "gold_articles": [
+        "832.10:fr:25",
+        "832.10:de:25"
+      ],
+      "dense_rank": 3,
+      "bm25_rank": 4,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.7934806530631184,
+      "top_bm25_score": 4.059077442392896,
+      "top_article": "832.10:de:25"
+    },
+    {
+      "id": "en-hia-03",
+      "language": "en",
+      "question": "Who must take out health-care insurance in Switzerland, and within what time after taking up residence?",
+      "gold_articles": [
+        "832.10:fr:3",
+        "832.10:de:3"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": null,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8336578665407677,
+      "top_bm25_score": null,
+      "top_article": "832.10:fr:3"
+    },
+    {
+      "id": "en-hia-64",
+      "language": "en",
+      "question": "What deductible and coinsurance do insured persons pay towards the cost of benefits?",
+      "gold_articles": [
+        "832.10:fr:64",
+        "832.10:de:64"
+      ],
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "top_dense_score": 0.7852100416472635,
+      "top_bm25_score": null,
+      "top_article": "832.10:fr:27"
+    },
+    {
+      "id": "en-hia-31",
+      "language": "en",
+      "question": "When does compulsory health insurance cover dental treatment?",
+      "gold_articles": [
+        "832.10:fr:31",
+        "832.10:de:31"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": null,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.822289500824992,
+      "top_bm25_score": null,
+      "top_article": "832.10:fr:31"
+    },
+    {
+      "id": "en-ica-01",
+      "language": "en",
+      "question": "How long is a person bound by a proposal to conclude an insurance contract?",
+      "gold_articles": [
+        "221.229.1:fr:1",
+        "221.229.1:de:1"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": 1,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.844795314736472,
+      "top_bm25_score": 0.0,
+      "top_article": "221.229.1:fr:1"
+    },
+    {
+      "id": "en-ica-03",
+      "language": "en",
+      "question": "What must the insurance company disclose before the contract is concluded?",
+      "gold_articles": [
+        "221.229.1:fr:3",
+        "221.229.1:de:3"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": null,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.831223513057217,
+      "top_bm25_score": 0.0,
+      "top_article": "221.229.1:fr:3"
+    },
+    {
+      "id": "en-ica-14",
+      "language": "en",
+      "question": "Does the insurer have to pay if the policyholder caused the insured event intentionally?",
+      "gold_articles": [
+        "221.229.1:fr:14",
+        "221.229.1:de:14"
+      ],
+      "dense_rank": 1,
+      "bm25_rank": null,
+      "hybrid_rank": 1,
+      "top_dense_score": 0.8132513463905733,
+      "top_bm25_score": 0.0,
+      "top_article": "221.229.1:fr:14"
+    },
+    {
+      "id": "en-ica-46",
+      "language": "en",
+      "question": "What is the limitation period for claims arising from an insurance contract?",
+      "gold_articles": [
+        "221.229.1:fr:46",
+        "221.229.1:de:46"
+      ],
+      "dense_rank": null,
+      "bm25_rank": null,
+      "hybrid_rank": null,
+      "top_dense_score": 0.8037476415309348,
+      "top_bm25_score": 0.0,
+      "top_article": "221.229.1:fr:1"
+    }
+  ],
+  "per_answer": [
+    {
+      "id": "fr-lamal-25",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8838,
+      "best_bm25_score": 20.0845,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 31 Soins dentaires, p. 16 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 25 Prestations générales en cas de maladie, p. 13 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 28 Accident, p. 16 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "fr-lamal-03",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8742,
+      "best_bm25_score": 19.9541,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 3 Personnes tenues de s’assurer, p. 2 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 5 Début et fin de la couverture d’assurance, p. 3 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 25a Soins en cas de maladie, p. 14 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "fr-lamal-64",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8668,
+      "best_bm25_score": 29.5618,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 64 Financement — Participation aux coûts, p. 52 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 62 Formes particulières d’assurance, p. 51 — version 2026-07-01",
+        "LCA (SR 221.229.1), art. 94 Transformation et rachat — Réduction et rachat de la participation aux bénéfices, p. 31 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "fr-lamal-31",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8955,
+      "best_bm25_score": 23.2726,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 31 Soins dentaires, p. 16 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 28 Accident, p. 16 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 24 Principe, p. 12 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "fr-lamal-04",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8975,
+      "best_bm25_score": 26.779,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 4 Choix de l’assureur, p. 3 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 70 Changement d’assureur, p. 60 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 7 Changement d’assureur, p. 5 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "fr-lca-01",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8883,
+      "best_bm25_score": 25.6403,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 2 Conclusion du contrat — Propositions spéciales, p. 2 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 9 Contenu et force obligatoire du contrat — Couverture provisoire, p. 7 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "fr-lca-14",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8805,
+      "best_bm25_score": 25.2513,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 14 Contenu et force obligatoire du contrat — Sinistre causé par faute, p. 8 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 42 Survenance du sinistre — Dommage partiel, p. 18 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 38 Survenance du sinistre — Déclarations obligatoires en cas de sinistre, p. 15 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "fr-lca-46",
+      "language": "fr",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8779,
+      "best_bm25_score": 23.7959,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 46 Autres dispositions — Prescription et déchéance, p. 20 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 21 Prime — Rapports de droit après la demeure, p. 10 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "de-kvg-25",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.9055,
+      "best_bm25_score": 19.3276,
+      "citation_hit": true,
+      "citations": [
+        "KVG (SR 832.10), art. 25 Allgemeine Leistungen bei Krankheit, p. 13 — version 2026-07-01",
+        "KVG (SR 832.10), art. 31 Zahnärztliche Behandlungen, p. 17 — version 2026-07-01",
+        "KVG (SR 832.10), art. 28 Unfälle, p. 16 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "de-kvg-03",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.9055,
+      "best_bm25_score": 22.4063,
+      "citation_hit": true,
+      "citations": [
+        "KVG (SR 832.10), art. 3 Versicherungspflichtige Personen, p. 2 — version 2026-07-01",
+        "KVG (SR 832.10), art. 67 Beitritt, p. 60 — version 2026-07-01",
+        "KVG (SR 832.10), art. 5 Beginn und Ende der Versicherung, p. 4 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "de-kvg-64",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.89,
+      "best_bm25_score": 24.968,
+      "citation_hit": true,
+      "citations": [
+        "KVG (SR 832.10), art. 64 Finanzierung — Kostenbeteiligung, p. 53 — version 2026-07-01",
+        "KVG (SR 832.10), art. 58f Finanzierung der Aufgaben und des Betriebs der Eidgenössischen Qualitätskommission, p. 46 — version 2026-07-01",
+        "KVG (SR 832.10), art. 19 Förderung der Verhütung von Krankheiten, p. 10 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "de-kvg-31",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.9239,
+      "best_bm25_score": 21.9262,
+      "citation_hit": true,
+      "citations": [
+        "KVG (SR 832.10), art. 31 Zahnärztliche Behandlungen, p. 17 — version 2026-07-01",
+        "KVG (SR 832.10), art. 24 Grundsatz, p. 13 — version 2026-07-01",
+        "KVG (SR 832.10), art. 28 Unfälle, p. 16 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "de-vvg-01",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.9171,
+      "best_bm25_score": 17.9358,
+      "citation_hit": true,
+      "citations": [
+        "VVG (SR 221.229.1), art. 1 Abschluss des Vertrags — Versicherungsantrag — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 2a Abschluss des Vertrags — Widerrufsrecht, p. 2 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 2 Abschluss des Vertrags — Besondere Antragsverhältnisse, p. 1 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "de-vvg-03",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8923,
+      "best_bm25_score": 12.7535,
+      "citation_hit": true,
+      "citations": [
+        "VVG (SR 221.229.1), art. 3 Aufklärungspflichten — Informationspflicht des Versicherungsunternehmens, p. 3 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 1 Abschluss des Vertrags — Versicherungsantrag — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 8 Aufklärungspflichten — Nichteintritt der Folgen der verletzten Anzeigepflicht, p. 6 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "de-vvg-14",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8824,
+      "best_bm25_score": 28.1551,
+      "citation_hit": true,
+      "citations": [
+        "VVG (SR 221.229.1), art. 14 Inhalt und Verbindlichkeit des Vertrags — Schuldhafte Herbeiführung des befürchteten Ereignisses, p. 8 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 15 Inhalt und Verbindlichkeit des Vertrags — Gebote der Menschlichkeit, p. 9 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 42 Eintritt des befürchteten Ereignisses — Teilschaden, p. 19 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "de-vvg-46",
+      "language": "de",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8796,
+      "best_bm25_score": 18.1001,
+      "citation_hit": true,
+      "citations": [
+        "VVG (SR 221.229.1), art. 46 Weitere Bestimmungen — Verjährung und Befristung, p. 21 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 28a Änderung des Vertrags — Gefahrsminderung, p. 12 — version 2024-01-01",
+        "KVG (SR 832.10), art. 64a Finanzierung — Nichtbezahlung von Prämien und Kostenbeteiligungen, p. 54 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "en-hia-25",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8164,
+      "best_bm25_score": 4.5898,
+      "citation_hit": true,
+      "citations": [
+        "KVG (SR 832.10), art. 25 Allgemeine Leistungen bei Krankheit, p. 13 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 26 Mesures de prévention, p. 15 — version 2026-07-01",
+        "KVG (SR 832.10), art. 58h Massnahmen des Bundesrates zur Qualitätsentwicklung und zur Sicherung und Wiederherstellung des zweckmässigen Einsatzes der Leistungen, p. 47 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "en-hia-03",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8337,
+      "best_bm25_score": 0.0,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 3 Personnes tenues de s’assurer, p. 2 — version 2026-07-01",
+        "VVG (SR 221.229.1), art. 1 Abschluss des Vertrags — Versicherungsantrag — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-hia-64",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.7852,
+      "best_bm25_score": 0.0,
+      "citation_hit": false,
+      "citations": [
+        "LAMal (SR 832.10), art. 27 Infirmité congénitale, p. 15 — version 2026-07-01",
+        "VVG (SR 221.229.1), art. 1 Abschluss des Vertrags — Versicherungsantrag — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-hia-31",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8223,
+      "best_bm25_score": 0.0,
+      "citation_hit": true,
+      "citations": [
+        "LAMal (SR 832.10), art. 31 Soins dentaires, p. 16 — version 2026-07-01",
+        "VVG (SR 221.229.1), art. 1 Abschluss des Vertrags — Versicherungsantrag — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-ica-01",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8448,
+      "best_bm25_score": 0.0,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 2 Conclusion du contrat — Propositions spéciales, p. 2 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 2a Conclusion du contrat — Droit de révocation, p. 2 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-ica-03",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8312,
+      "best_bm25_score": 0.0,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 3 Obligations d’information — Obligation d’information de l’entreprise d’assurance, p. 3 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 3 Aufklärungspflichten — Informationspflicht des Versicherungsunternehmens, p. 3 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 4 Déclarations obligatoires — Règles générales, p. 5 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-ica-14",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8133,
+      "best_bm25_score": 0.0,
+      "citation_hit": true,
+      "citations": [
+        "LCA (SR 221.229.1), art. 14 Contenu et force obligatoire du contrat — Sinistre causé par faute, p. 8 — version 2024-01-01",
+        "VVG (SR 221.229.1), art. 14 Inhalt und Verbindlichkeit des Vertrags — Schuldhafte Herbeiführung des befürchteten Ereignisses, p. 8 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 6 Réticence, ses conséquences — Règle générale, p. 5 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "en-ica-46",
+      "language": "en",
+      "expect_insufficient": false,
+      "probe_type": "",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8141,
+      "best_bm25_score": 4.0649,
+      "citation_hit": false,
+      "citations": [
+        "LCA (SR 221.229.1), art. 1 Conclusion du contrat — Proposition d’assurance, p. 1 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 2a Conclusion du contrat — Droit de révocation, p. 2 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 38c Survenance du sinistre — Frais occasionnés par la limitation du dommage, p. 16 — version 2024-01-01"
+      ]
+    },
+    {
+      "id": "probe-en-japan",
+      "language": "en",
+      "expect_insufficient": true,
+      "probe_type": "off_topic",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.7183,
+      "best_bm25_score": 6.9315,
+      "citation_hit": null,
+      "citations": [
+        "LCA (SR 221.229.1), art. 95b Assurance-accidents et assurance-maladie — Assurance contre les accidents. Indemnité d’invalidité, p. 32 — version 2024-01-01",
+        "LCA (SR 221.229.1), art. 98a Dispositions impératives — Exceptions, p. 33 — version 2024-01-01",
+        "LAMal (SR 832.10), art. 61 Principes, p. 50 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "probe-fr-fondue",
+      "language": "fr",
+      "expect_insufficient": true,
+      "probe_type": "off_topic",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.782,
+      "best_bm25_score": 11.5544,
+      "citation_hit": null,
+      "citations": [
+        "LCA (SR 221.229.1), art. 84 Interprétation de la clause bénéficiaire — bb. En ce qui a trait aux parts, p. 28 — version 2024-01-01",
+        "LAMal (SR 832.10), art. 64 Financement — Participation aux coûts, p. 52 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 65 Réduction des primes par les cantons, p. 56 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "probe-de-lausanne",
+      "language": "de",
+      "expect_insufficient": true,
+      "probe_type": "off_topic",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.7193,
+      "best_bm25_score": 2.1606,
+      "citation_hit": null,
+      "citations": [
+        "KVG (SR 832.10), art. 55a Beschränkung der Anzahl Ärzte und Ärztinnen, die im ambulanten Bereich Leistungen erbringen, p. 39 — version 2026-07-01",
+        "VVG (SR 221.229.1), art. 8 Aufklärungspflichten — Nichteintritt der Folgen der verletzten Anzeigepflicht, p. 6 — version 2024-01-01",
+        "KVG (SR 832.10), art. 95a Verhältnis zum europäischen Recht, p. 72 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "probe-en-worldcup",
+      "language": "en",
+      "expect_insufficient": true,
+      "probe_type": "off_topic",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.7141,
+      "best_bm25_score": 5.5463,
+      "citation_hit": null,
+      "citations": [
+        "LAMal (SR 832.10), art. 84b Garantie de la protection des données par les assureurs, p. 68 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 39 Hôpitaux et autres institutions, p. 21 — version 2026-07-01",
+        "KVG (SR 832.10), art. 84b Sicherstellung des Datenschutzes durch die Versicherer, p. 69 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "probe-fr-franchise-chf",
+      "language": "fr",
+      "expect_insufficient": true,
+      "probe_type": "near_miss",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.8275,
+      "best_bm25_score": 15.6116,
+      "citation_hit": null,
+      "citations": [
+        "LAMal (SR 832.10), art. 64 Financement — Participation aux coûts, p. 52 — version 2026-07-01",
+        "LCA (SR 221.229.1), art. 98a Dispositions impératives — Exceptions, p. 33 — version 2024-01-01",
+        "LAMal (SR 832.10), art. 25a Soins en cas de maladie, p. 14 — version 2026-07-01"
+      ]
+    },
+    {
+      "id": "probe-en-premium-zurich",
+      "language": "en",
+      "expect_insufficient": true,
+      "probe_type": "near_miss",
+      "insufficient_context": false,
+      "backend": "extractive",
+      "best_dense_score": 0.7942,
+      "best_bm25_score": 4.6538,
+      "citation_hit": null,
+      "citations": [
+        "LAMal (SR 832.10), art. 65 Réduction des primes par les cantons, p. 56 — version 2026-07-01",
+        "LAMal (SR 832.10), art. 41 Choix du fournisseur de prestations et prise en charge des coûts, p. 22 — version 2026-07-01",
+        "VVG (SR 221.229.1), art. 98a Zwingende Bestimmungen — Ausnahmen, p. 35 — version 2024-01-01"
+      ]
+    }
+  ]
+}
